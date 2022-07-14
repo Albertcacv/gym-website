@@ -1,0 +1,20 @@
+.programsHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	padding: 0 2rem;
+	font-size: 3rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.programsContent {
+	margin-top: 2rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	padding: 0 2rem;
+}
