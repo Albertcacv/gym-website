@@ -14,8 +14,36 @@
 	gap: 2rem;
 	color: #fff;
 }
+.headerMenu > li > a {
+	text-decoration: none;
+	color: #fff;
+}
 
-.headerMenu > li:hover {
+.headerMenu > li > a:hover {
 	cursor: pointer;
 	color: var(--orange);
+}
+.headerBars {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: var(--appColor);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+	.header > :nth-child(2) {
+		position: fixed;
+		right: 2rem;
+		z-index: 10;
+	}
+
+	.headerMenu {
+		flex-direction: column;
+		background-color: var(--appColor);
+		padding: 2rem;
+	}
+
+	.logo {
+		margin-top: 1rem;
+	}
 }

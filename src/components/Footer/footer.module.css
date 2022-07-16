@@ -1,0 +1,23 @@
+.footer {
+	border-top: 2px solid white;
+	text-align: center;
+	padding: 1rem 2rem;
+}
+
+.footerSocial {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 4rem;
+}
+
+.footerSocial > li > img {
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.footerLogo > img {
+	width: 10rem;
+}

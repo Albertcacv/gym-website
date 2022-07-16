@@ -3,8 +3,8 @@ import styles from './figure.module.css'
 const Figure = ({text, description}) => {
   return (
     <article className={styles.figure}>
-      <span>{text}</span>
-      <span>{description}</span>
+      <span className={styles.figureText}>{text}</span>
+      <span className={styles.figureDescription}>{description}</span>
     </article>
   )
 }

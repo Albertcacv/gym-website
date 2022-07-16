@@ -1,0 +1,107 @@
+.reasons {
+	padding: 0 2rem;
+	display: flex;
+	gap: 2rem;
+}
+
+.reasonsLeft,
+.reasonsRight {
+	flex: 1 1;
+}
+
+.reasonsLeft {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	grid-auto-rows: 1fr;
+}
+
+.reasonsLeft > :nth-child(1) {
+	width: 12rem;
+	grid-row: 1/3;
+	height: 28rem;
+}
+
+.reasonsLeft > :nth-child(2) {
+	height: 16rem;
+	width: auto;
+}
+
+.reasonsLeft > :nth-child(3) {
+	grid-row: 2;
+}
+
+.reasonsLeft > :nth-child(4) {
+	grid-row: 2;
+	width: auto;
+}
+
+.reasonsRight {
+	text-transform: uppercase;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.reasonsRight > span {
+	font-weight: bold;
+	color: var(--orange);
+}
+.reasonsRight > div {
+	color: white;
+
+	font-weight: bold;
+}
+
+.reasonsIntro {
+	font-size: 3rem;
+}
+.reasonsDescription {
+	font-size: 1rem;
+}
+.reasonsDescription > span {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.reasonsPartners > span {
+	color: gray;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+.reasonsPartners > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+	.reasons {
+		flex-direction: column;
+	}
+
+	.reasonsLeft {
+		grid-auto-rows: auto;
+		overflow: hidden;
+	}
+
+	.reasonsLeft > :nth-child(1) {
+		width: 7rem;
+		height: 17rem;
+	}
+	.reasonsLeft > :nth-child(2) {
+		width: 15rem;
+		height: 10rem;
+	}
+	.reasonsLeft > :nth-child(3) {
+		width: 7rem;
+	}
+	.reasonsLeft > :nth-child(4) {
+		width: 7rem;
+		height: 6rem;
+	}
+}
